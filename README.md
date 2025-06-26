@@ -30,3 +30,4 @@ await speakText(result);
 function askInput() { rl.question("🧠 Your Command ➤ ", async (input) => { if (input.toLowerCase() === "exit") { console.log("👋 Exiting ULCS Assistant. See you soon!"); rl.close(); return; } await handleInput(input); askInput(); }); }
 
 askInput();
+
